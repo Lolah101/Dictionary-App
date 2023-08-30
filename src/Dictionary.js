@@ -7,7 +7,7 @@ import Results from "./Results";
 
 export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
-  let [results, setResults] = useState({});
+  let [results, setResults] = useState(null);
   let [photos, setPhotos] = useState(null);
 
   function handleResponse(response) {
