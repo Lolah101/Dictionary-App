@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css";
 
 import Meanings from "./Meanings";
 
@@ -18,9 +19,9 @@ export default function Results(props) {
                   <Meanings meaning={meaning} />
                 </div>
               );
-            })
+            }) 
           ) : (
-            <div>Loading...</div>
+            <div className="display">Load</div>
           )}
         </div>
       </div>

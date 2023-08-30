@@ -1,17 +1,36 @@
-import logo from "./logo.png";
 import "./App.css";
+
 import Dictionary from "./Dictionary";
 
 export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <header className="App-header">
-          <img src={logo} className="App-logo img-fluid" alt="logo" />
+        <header className="header">
+        
+          <h1>Dic·tion·ar·y</h1>
         </header>
-        <Dictionary />
-        <footer className="App-footer">
-          <small>Coded by SheCodes</small>
+        <main>
+          <Dictionary />
+        </main>
+        <footer>
+          👉{" "}
+          <a
+            href="https://github.com/Lolah101/Dictionary-App"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Open source
+          </a>{" "}
+          code made by{" "}
+          <a
+            href="https://www.linkedin.com/in/loza-d-a1a947252/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Loza Daniel
+          </a>{" "}
+          👈
         </footer>
       </div>
     </div>

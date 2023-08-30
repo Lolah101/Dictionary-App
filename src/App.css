@@ -1,13 +1,129 @@
-.App-logo {
-  max-width: 400px;
+body {
+  background-attachment: fixed;
+  background-image: url(./image/paperbackgound.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: block;
   margin: 0 auto;
+  max-width: 960px;
+  font-family: "Victor Mono", monospace;
 }
 
-.App-header {
-  margin: 30px 0;
+h1 {
+  display: table;
+  font-size: 80px;
+  margin: 80px auto;
+  text-align: center;
+  background: linear-gradient(0deg, rgba(255, 253, 131, 0.1), rgb(250, 246, 2));
+  font-weight: 500;
+  line-height: 1.2;
 }
-.App-footer {
+
+h2 {
+  display: inline-block;
+  padding-right: 10px;
+  margin-bottom: 0;
+}
+
+.button-50 {
+  appearance: button;
+  background-color: #000;
+  border: 1px solid #000;
+  border-radius: 6px;
+  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  overflow: visible;
+  text-align: center;
+  touch-action: manipulation;
+}
+
+.button-50:hover {
+  background-color: rgb(250, 246, 2);
+
+  font-weight: bold;
+}
+
+.button-50:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+.phonetic {
+  color: dimgrey;
+}
+
+.images {
+  border-radius: 6px;
+  margin-bottom: 30px;
+}
+
+.results {
+  background-color: rgba(255, 255, 255, 0.651);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.result-name {
+  padding: 30px;
+}
+
+.result-list {
+  padding: 0 30px;
+  padding-bottom: 30px;
+}
+
+.result-images {
+  padding: 30px;
+  padding-bottom: 0px;
+}
+
+.between-results {
+  margin-top: 30px;
+}
+
+.result-type {
+  display: inline-block;
+  background: linear-gradient(0deg, rgba(255, 253, 131, 0.1), rgb(250, 246, 2));
+}
+
+.search-area {
+  padding-left: 0;
+}
+
+.search-bar {
+  padding: 10px;
+  border-color: #000;
+  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+}
+
+.search-bar:focus {
+  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+  border-color: #000;
+}
+
+.main-search {
+  margin-bottom: 40px;
+}
+
+a {
+  position: relative;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  background: linear-gradient(0deg, rgba(255, 253, 131, 0.5), rgb(250, 246, 2))
+    no-repeat right bottom / 0;
+  transition: background-size 350ms;
+}
+
+a:where(:hover, :focus-visible) {
+  background-size: 100%;
+  background-position-x: left;
+}
+footer {
   text-align: center;
   margin: 30px 0;
 }
